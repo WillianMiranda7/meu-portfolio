@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/all.css">
+    <title>Portfólio Willian Miranda</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- Menu Hamburger -->
+        <div id="menuHamburger" onclick="toOpenMenu()">
+            <div class="hamburgerLine"></div>
+            <div class="hamburgerLine"></div>
+            <div class="hamburgerLine"></div>
+        </div>
+
+        <!-- Close menu button -->
+        <img id="closeButton" src="imagens-portfolio/fechar.png" alt="" onclick="toCloseMenu()">
+
+        <nav>
+            <ul id="menuUl">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Habilidades</a></li>
+                <li><a href="#">Portfólio</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+
+        <!-- My presentation -->
+        <section id="present">
+
+            <div id="photoWithSocial">
+                <img id="willianPhoto" src="imagens-portfolio/voce-nao-tem.png" alt="">
+
+                <div class="socialsContainer">
+                    <img src="imagens-portfolio/instagram.png" alt="" class="socials">
+                    <img src="imagens-portfolio/linkedin.png" alt="" class="socials">
+                    <img src="imagens-portfolio/placa-do-github.png" alt="" class="socials">
+                </div>
+            </div>
+
+            <div id="presentText">
+                <h1 id="name">Willian Miranda</h1>
+                <h2 id="webDev">Desenvolvedor-Web</h2>
+                <p id="myPresentationTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro enim obcaecati
+                    dolore voluptatum
+                    architecto, nihil tempore atque ad exercitationem rerum?</p>
+            </div>
+        </section>
+
+        <section id="skils">
+            <h1>Skils</h1>
+            <div id="containerOfExplainSkils">
+
+                <div class="photoWithTxtSkils">
+                    <img class="photoSkils" src="imagens-portfolio/html-5.png" alt="">
+                    <p id="skilHtml" class="txtSkils">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, eveniet expedita. Illum iusto sit iste ex quaerat eos facilis minus ullam ab. Beatae vitae omnis voluptatibus quaerat numquam debitis nulla.</p>
+                </div>
+
+                <div class="photoWithTxtSkils">
+                    <img class="photoSkils" src="imagens-portfolio/css-3.png" alt="">
+                    <p  id="skilCss" class="txtSkils">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, eveniet expedita. Illum iusto sit iste ex quaerat eos facilis minus ullam ab. Beatae vitae omnis voluptatibus quaerat numquam debitis nulla.</p>
+                </div>
+
+                <div class="photoWithTxtSkils">
+                    <img class="photoSkils" src="imagens-portfolio/js.png" alt="">
+                    <p id="skilJs" class="txtSkils">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, eveniet expedita. Illum iusto sit iste ex quaerat eos facilis minus ullam ab. Beatae vitae omnis voluptatibus quaerat numquam debitis nulla.</p>
+                </div>
+
+                <div class="photoWithTxtSkils">
+                    <img class="photoSkils" src="imagens-portfolio/wordpress.png" alt="">
+                    <p id="skilWp" class="txtSkils">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, eveniet expedita. Illum iusto sit iste ex quaerat eos facilis minus ullam ab. Beatae vitae omnis voluptatibus quaerat numquam debitis nulla.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+
+            <h1>Portfólio</h1>
+
+            <div id="cardsContainer">
+
+                <!-- First card -->
+                <div class="card">
+                    <h2 class="projectTitle">Título do projeto</h2>
+                    <img src="imagens-portfolio/voce-nao-tem.jpg" alt="" class="projectPreview">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit officiis nemo suscipit esse
+                        asperiores excepturi a. Ad, minus ea vero magnam vel eveniet eos magni, repellendus consequuntur
+                        dignissimos dolorum iure?</p>
+                    <input class="seeMoreCard" type="button" value="Ver mais">
+                </div>
+
+                <!-- Second card -->
+                <div class="card">
+                    <h2 class="projectTitle">Título do projeto</h2>
+                    <img src="imagens-portfolio/voce-nao-tem.jpg" alt="" class="projectPreview">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit officiis nemo suscipit esse
+                        asperiores excepturi a. Ad, minus ea vero magnam vel eveniet eos magni, repellendus consequuntur
+                        dignissimos dolorum iure?</p>
+                    <input class="seeMoreCard" type="button" value="Ver mais">
+                </div>
+
+                <!-- Third card -->
+                <div class="card">
+                    <h2 class="projectTitle">Título do projeto</h2>
+                    <img src="imagens-portfolio/voce-nao-tem.jpg" alt="" class="projectPreview">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit officiis nemo suscipit esse
+                        asperiores excepturi a. Ad, minus ea vero magnam vel eveniet eos magni, repellendus consequuntur
+                        dignissimos dolorum iure?</p>
+                    <input class="seeMoreCard" type="button" value="Ver mais">
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+
+
+    <script src="JavaScript/script.js"></script>
+</body>
+
+</html>
