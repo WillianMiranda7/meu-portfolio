@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedgwick+Ave+Display&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -8,41 +10,43 @@
 }
 
 
-
-
 h1 {
     font-size: 2.986rem;
-    font-family: "Roboto", sans-serif
+    font-family: "Orbitron", sans-serif;
 }
 
 h2 {
-    font-size: 2.488rem;
-    font-family: "Roboto", sans-serif
+    font-size: 2rem;
+    font-family: "Orbitron", sans-serif;
+
 }
 
 h3 {
     font-size: 2.074rem;
-    font-family: "Roboto", sans-serif
+    font-family: "Orbitron", sans-serif;
+
 }
 
 h4 {
     font-size: 1.728rem;
-    font-family: "Roboto", sans-serif
+    font-family: "Orbitron", sans-serif;
+
 }
 
 h5 {
     font-size: 1.44rem;
-    font-family: "Roboto", sans-serif
+    font-family: "Orbitron", sans-serif;
+
 }
 
 h6 {
     font-size: 1.2rem;
-    font-family: "Roboto", sans-serif
+    font-family: "Orbitron", sans-serif;
 }
 
 p {
-    font-size: 1rem;
-    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -56,12 +60,22 @@ small {
 
 
 
-
+header{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
 
 #menuHamburger{
     position: absolute;
     right: 16px;
     top: 24px;
+    background-color: rgba(255, 255, 255);
+    color: #FF7700;
+    box-shadow: 1px 1px 6px;
+    padding: 8px;
+    border-radius: 8px;
     z-index: 1;
 }
 
@@ -70,7 +84,7 @@ small {
     height: 8px;
     margin: 8px 0;
     border-radius: 25px;
-    background-color: blue;
+    background-color: #FF7700;
 }
 
 header ul{
@@ -78,8 +92,12 @@ header ul{
     display: none;
     right: 0;
     top: 0;
-    background-color: yellow;
+    background-color: rgba(255, 255, 255);
+    color: #FF7700;
+    box-shadow: 1px 1px 10px;
     padding: 64px 42px 16px 16px;
+    border: solid 1px #FF7700;
+    border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) #FF7700 #FF7700;
     border-radius: 0 0 0 8px;
 }
 

@@ -1,5 +1,7 @@
+/* All content after the header and before the footer */
 .content {
     margin-top: 100px;
+    padding: 0 8px;
 }
 
 .socialsContainer {
@@ -8,11 +10,15 @@
     justify-content: space-evenly;
 }
 
+
+
+/* Box with Willian´s photo with social media icons */
 #photoWithSocial {
     display: flex;
     justify-content: space-around;
 }
 
+/* Box of social media icons */
 .socials {
     height: 48px;
     width: 48px;
@@ -22,47 +28,55 @@
     width: 300px;
 }
 
+/* Willian´s name */
 #name {
-    color: rgba(0, 0, 255, 0.792);
+    font-size: 2.7rem;
+    margin-top: 16px;
+    color: #7678ED;
 }
 
+/* Profission */
 #webDev {
-    font-size: 2rem;
 }
 
+/* Presentation paragraph */
 #myPresentationTxt {
     margin-top: 16px;
 }
 
-#skils {
+/* Container skills */
+#skills {
     margin-top: 56px;
 }
 
-#skils h1 {
-    color: rgba(0, 0, 255, 0.792);
+#skills h1 {
+    color: #7678ED;
     margin-top: 56px;
 }
 
-#containerOfExplainSkils{
+
+#containerOfExplainSkills {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     row-gap: 40px;
 }
 
-.photoWithTxtSkils{
+/* Indivisual skills */
+.photoWithTxtSkills {
     display: flex;
     flex-direction: column;
     align-items: center;
     align-self: center;
 }
 
-/* Skils photos (icons)*/
-.photoSkils{
+/* Skills photos (icons)*/
+.photoSkills {
     width: 134px;
 }
 
-.txtSkils{
+/* Skills paragraph */
+.txtSkills {
     width: 300px;
     padding: 10px;
     margin-top: 8px;
@@ -70,37 +84,48 @@
     color: white;
 }
 
-#skilHtml{
+#skillHtml {
     background-color: #ff4c1e;
 }
 
-#skilCss{
+#skillCss {
     background-color: #004ce8;
 }
 
-#skilJs{
- background-color: #ffdf00;
+#skillJs {
+    background-color: #ffdf00;
+    color: #000;
 }
 
-#skilWp{
+#skillWp {
     background-color: #00769d;
 }
 
+#portfolio h1{
+    color: #7678ED;
+}
 
-
-
-
-
+#portfolio {
+    margin-top: 56px;
+}
 
 #cardsContainer {
-
+    /* margin-top: 24px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     width: 350px;
-    height: 500px;
-    padding: 10px;
-    background-color: gray;
+    padding: 16px;
+    margin-top: 24px;
+    border-radius: 8px;
+    border: solid #7678ED;
+    box-shadow: 2px 2px 8px #555;
     position: relative;
 }
 
@@ -111,14 +136,28 @@
 .projectPreview {
     width: 100%;
     height: 250px;
+    border-radius: 8px;
+}
+
+.portfolioParagraph {
+    margin-top: 8px;
 }
 
 .seeMoreCard {
-    border-style: none;
-    background-color: blue;
-    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 1.3rem;
+    border-radius: 3px;
+    height: 40px;
+    margin-top: 24px;
     padding: 8px;
-    position: absolute;
-    bottom: 8px;
-    right: 8px;
+    font-weight: 700;
+    font-family: "Orbitron", sans-serif;
+    border-style: none;
+    cursor: pointer;
+    align-self: end;
+    background-color: rgba(255, 255, 255, 0);
+    color: #FF7700;
+    box-shadow: 1px 1px 6px;
 }
