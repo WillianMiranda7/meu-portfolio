@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedgwick+Ave+Display&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -9,48 +9,62 @@
     max-width: 100%;
 }
 
+:root {
+    --cor60: #fff;
+    --cor30: #00769d;
+    --cor10: #FF7700;
+
+    --font-paragraph: Arial, Helvetica, sans-serif;
+    --font-title: "Orbitron", sans-serif;
+}
+
+button,
+input {
+    font-family: var(--font-title);
+}
 
 h1 {
     font-size: 2.986rem;
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--font-title);
+    color: var(--cor30);
 }
 
 h2 {
     font-size: 2rem;
-    font-family: "Orbitron", sans-serif;
-
+    font-family: var(--font-title);
 }
 
 h3 {
     font-size: 2.074rem;
-    font-family: "Orbitron", sans-serif;
-
+    font-family: var(--font-title);
 }
 
 h4 {
     font-size: 1.728rem;
-    font-family: "Orbitron", sans-serif;
-
+    font-family: var(--font-title);
 }
 
 h5 {
     font-size: 1.44rem;
-    font-family: "Orbitron", sans-serif;
-
+    font-family: var(--font-title);
 }
 
 h6 {
     font-size: 1.2rem;
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--font-title);
 }
 
 p {
     font-size: 20px;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--font-paragraph);
 }
 
 a {
     font-size: 0.90em;
+    font-family: var(--font-title);
+    color: var(--cor10);
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 small {
@@ -60,55 +74,58 @@ small {
 
 
 
-header{
+header {
     position: fixed;
     top: 0;
     z-index: 1;
     width: 100%;
 }
 
-#menuHamburger{
+#menuHamburger {
     position: absolute;
     right: 16px;
     top: 24px;
-    background-color: rgba(255, 255, 255);
-    color: #FF7700;
-    box-shadow: 1px 1px 6px;
     padding: 8px;
+
+    box-shadow: 1px 1px 6px var(--cor10);
     border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.96);
     z-index: 1;
 }
 
-.hamburgerLine{
+.hamburgerLine {
     width: 56px;
     height: 8px;
     margin: 8px 0;
+
     border-radius: 25px;
-    background-color: #FF7700;
+    background-color: var(--cor10);
 }
 
-header ul{
+header ul {
     position: absolute;
     display: none;
     right: 0;
     top: 0;
-    background-color: rgba(255, 255, 255);
-    color: #FF7700;
-    box-shadow: 1px 1px 10px;
     padding: 64px 42px 16px 16px;
+
     border: solid 1px #FF7700;
+    box-shadow: 1px 1px 10px #FF7700;
     border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) #FF7700 #FF7700;
     border-radius: 0 0 0 8px;
+
+    background-color: rgba(255, 255, 255, 0.96);
 }
 
-header ul li{
+header ul li {
     /* background-color: blue; */
+    font-family: var(--font-paragraph);
     padding: 5px;
     margin: 24px 0;
     font-size: 1.5rem;
 }
 
-#closeButton{
+#closeButton {
     position: absolute;
     right: 16px;
     top: 16px;

@@ -32,7 +32,6 @@
 #name {
     font-size: 2.7rem;
     margin-top: 16px;
-    color: #7678ED;
 }
 
 /* Profission */
@@ -50,7 +49,6 @@
 }
 
 #skills h1 {
-    color: #7678ED;
     margin-top: 56px;
 }
 
@@ -77,11 +75,13 @@
 
 /* Skills paragraph */
 .txtSkills {
+    display: none;
     width: 300px;
     padding: 10px;
     margin-top: 8px;
+
     border-radius: 8px;
-    color: white;
+    color: var(--cor60);
 }
 
 #skillHtml {
@@ -102,7 +102,7 @@
 }
 
 #portfolio h1{
-    color: #7678ED;
+    color: var(--cor30);
 }
 
 #portfolio {
@@ -118,15 +118,16 @@
 }
 
 .card {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 350px;
     padding: 16px;
     margin-top: 24px;
+    
+    border: solid var(--cor30);
     border-radius: 8px;
-    border: solid #7678ED;
     box-shadow: 2px 2px 8px #555;
-    position: relative;
 }
 
 .projectTitle {
@@ -147,17 +148,18 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    font-size: 1.3rem;
-    border-radius: 3px;
-    height: 40px;
-    margin-top: 24px;
-    padding: 8px;
-    font-weight: 700;
-    font-family: "Orbitron", sans-serif;
-    border-style: none;
-    cursor: pointer;
     align-self: end;
-    background-color: rgba(255, 255, 255, 0);
-    color: #FF7700;
+    margin-top: 24px;
+    font-size: 1.3rem;
+    padding: 8px;
+    height: 40px;
+    font-weight: 700;
+    cursor: pointer;
+    
+    border-style: none;
+    border-radius: 3px;
     box-shadow: 1px 1px 6px;
+
+    color: var(--cor10);
+    background-color: rgba(255, 255, 255, 0);
 }
