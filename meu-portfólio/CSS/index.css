@@ -69,6 +69,7 @@
 /* Skills photos (icons)*/
 .photoSkills {
     width: 134px;
+    cursor: pointer;
 }
 
 /* Skills paragraph */
@@ -169,4 +170,29 @@
 
     color: var(--cor10);
     background-color: rgba(255, 255, 255, 0);
+}
+
+
+/* Contact section */
+
+#contact{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0066f41a;
+    border-top: solid 3px var(--cor10);
+}
+
+#contact h1{
+    margin-left: 8px;
+    margin-top: 24px;
+}
+
+#socialMediasContact{
+    margin: 24px 0;
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }
