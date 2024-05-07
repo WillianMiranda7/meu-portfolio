@@ -55,8 +55,6 @@
 
 #containerOfExplainSkills {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
     row-gap: 40px;
 }
 
@@ -74,19 +72,27 @@
 }
 
 /* Skills paragraph */
-.txtSkills {
-    display: none;
+ .skill {
     width: 300px;
     padding: 10px;
     margin-top: 8px;
-
-    border-radius: 8px;
+    font-size: 0;
     color: var(--cor60);
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.skill.active {
+    font-size: 20px;
+    font-family: var(--font-paragraph);
+    height: unset;
+    display: block;
 }
 
 #skillHtml {
     background-color: #ff4c1e;
 }
+
 
 #skillCss {
     background-color: #004ce8;
@@ -100,6 +106,7 @@
 #skillWp {
     background-color: #00769d;
 }
+
 
 #portfolio h1{
     color: var(--cor30);

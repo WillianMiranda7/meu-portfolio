@@ -16,56 +16,82 @@ function toggleMenu() {
 
 
 
+// Skills scripts
+
+// Variável para manter o controle da habilidade ativa atual
+let activeSkill = null;
+
+// Função para alternar a classe 'active' nas habilidades
+function toggleSkill(skillId) {
+    const skillElement = document.getElementById(skillId);
+    
+    // Verifique se há uma habilidade ativa atualmente
+    if (activeSkill && activeSkill !== skillElement) {
+        // Feche a habilidade ativa atual
+        activeSkill.classList.remove('active');
+    }
+
+    // Alternar a habilidade atual
+    skillElement.classList.toggle('active');
+    
+    // Atualizar a habilidade ativa atual
+    activeSkill = skillElement.classList.contains('active') ? skillElement : null;
+}
+
+// Adicione event listeners para os elementos de imagem
+document.getElementById('photoHtml').addEventListener('click', () => toggleSkill('skillHtml'));
+document.getElementById('photoCss').addEventListener('click', () => toggleSkill('skillCss'));
+document.getElementById('photoJs').addEventListener('click', () => toggleSkill('skillJs'));
+document.getElementById('photoWp').addEventListener('click', () => toggleSkill('skillWp'));
 
 
 
 
 
 
-// const menuUl = document.getElementById("menuUl")
-// const menuBt = document.getElementById("menuHamburger")
 
-// menuBt.addEventListener('click', toggleMenu)
 
-// function toggleMenu() {
-//     const isActive = menuBt.classList.contains('activate')
 
-//     menuBt.classList.toggle('activate', !isActive)
 
-//     menuUl.style.display = isActive ? 'none' : 'block'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Skills scripts
+
+// const htmlPhoto = document.getElementById('photoHtml')
+// const txtHtml = document.getElementById('skillHtml')
+
+// htmlPhoto.addEventListener('click', openSkill)
+
+// function openSkill() {
+//     const isActiveHtml = txtHtml.classList.contains('txtHtml')
+    
+//     txtHtml.classList.toggle('txtHtml', !isActiveHtml)
+    
+//     txtHtml.className = isActiveHtml ? '' : 'txtHtml'
 // }
-
-
-
-
-
-
-
-
-// const menuUl = document.getElementById("menuUl")
-// const menuBt = document.getElementById("menuHamburger")
-// const closeBt = document.getElementById("closeButton")
-// const menuLines = document.querySelectorAll('.hamburgerLine')
-
-// menuBt.addEventListener('click', toOpenMenu)
-
-// // To open menu button
-// function toOpenMenu() {
-//     menuUl.style.display = "block"
-//     // menuBt.style.display = "none"
-//     // closeBt.style.display = "block"
-// }
-
-// // To close menu button
-// function toCloseMenu() {
-//     menuUl.style.display = "none"
-//     // menuBt.style.display = "block"
-//     // closeBt.style.display = "none"
-// }
-
-// document.addEventListener('click', function (event) {
-//     if (event.target != menuBt && event.target != menuUl.contains /*&& menuBt.style.display === "none"*/) {
-//         toCloseMenu()
-//     }
-// })
-

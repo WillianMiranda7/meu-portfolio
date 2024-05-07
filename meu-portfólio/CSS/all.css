@@ -129,7 +129,7 @@ header {
 
 #menuUl {
     position: absolute;
-    right: -30vh;
+    right: -100vh;
     top: 0;
     padding: 64px 42px 16px 16px;
 
@@ -144,7 +144,7 @@ header {
 
 #menuUl.activateUl{
     right: 0;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 header ul li {
