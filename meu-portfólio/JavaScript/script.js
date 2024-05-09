@@ -56,7 +56,7 @@ function toggleSkill(skillElement) {
         // Fecha a habilidade ativa atual
         activeSkill.classList.remove('active');
     }
-
+    
     // Alterna a habilidade atual
     skillElement.classList.toggle('active');
 
@@ -94,10 +94,6 @@ function closeActiveSkill(event) {
 
 // Adiciona um event listener ao documento para detectar cliques fora das `divs` com `photoWithTxtSkills`
 document.addEventListener('click', closeActiveSkill);
-
-
-
-
 
 
 

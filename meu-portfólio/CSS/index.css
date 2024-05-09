@@ -24,6 +24,11 @@
     width: 48px;
 }
 
+a img{
+    border-radius: 14px;
+    box-shadow: 4px 4px 10px #000;
+}
+
 #willianPhoto {
     width: 300px;
 }

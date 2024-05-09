@@ -1,0 +1,7 @@
+activeSkill = Null
+
+skillElement = Undefined
+
+##Clicou no html
+
+act
