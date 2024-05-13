@@ -41,9 +41,6 @@ menuItems.forEach(item => {
 
 
 
-
-
-
 // Skills script
 
 // Variável para manter o controle da habilidade ativa atual

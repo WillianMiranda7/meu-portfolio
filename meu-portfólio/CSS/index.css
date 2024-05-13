@@ -20,13 +20,12 @@
 
 /* Box of social media icons */
 .socials {
-    height: 48px;
-    width: 48px;
+    width: 40px;
+    transition: .5s;
 }
 
-a img{
-    border-radius: 14px;
-    box-shadow: 4px 4px 10px #000;
+.socials:hover{
+    width: 48px;
 }
 
 #willianPhoto {
@@ -72,11 +71,17 @@ a img{
     align-self: center;
 
     border-radius: 8px;
-    box-shadow: 1px 1px 24px;
+    box-shadow: 6px 6px 12px #444444, -6px -6px 12px #c9bfbf;
 
     margin-top: 40px;
     padding: 16px;
     cursor: pointer;
+    transition: .5s;
+}
+
+.photoWithTxtSkills:hover{
+    padding: 24px;
+    box-shadow: 5px 5px 56px;
 }
 
 /* Skills photos (icons)*/
@@ -148,7 +153,13 @@ a img{
     
     border: solid var(--cor30);
     border-radius: 8px;
-    box-shadow: 2px 2px 8px #555;
+    box-shadow: 6px 6px 12px #444444, -6px -6px 12px #c9bfbf;
+
+    transition: .5s;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 56px;
 }
 
 .projectTitle {
@@ -157,7 +168,6 @@ a img{
 
 .projectPreview {
     width: 100%;
-    height: 250px;
     border-radius: 8px;
 }
 
