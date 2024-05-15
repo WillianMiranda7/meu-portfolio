@@ -137,9 +137,9 @@ header {
     top: 0;
     padding: 64px 42px 16px 16px;
 
-    border: solid 1px #FF7700;
-    box-shadow: 1px 1px 10px #FF7700;
-    border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) #FF7700 #FF7700;
+    border: solid 1px var(--cor10);
+    box-shadow: 1px 1px 10px var(--cor10);
+    border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) var(--cor10) var(--cor10);
     border-radius: 0 0 0 8px;
 
     background-color: rgba(255, 255, 255, 0.96);
@@ -152,7 +152,6 @@ header {
 }
 
 header ul li {
-    /* background-color: blue; */
     font-family: var(--font-paragraph);
     padding: 5px;
     margin: 24px 0;
@@ -165,4 +164,66 @@ header ul li {
     right: 16px;
     top: 16px;
     z-index: 1;
+}
+
+/* Footer */
+
+#contact{
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0066f41a;
+    border-top: solid 3px var(--cor10);
+}
+
+#contact h1{
+    margin-top: 24px;
+}
+
+#socialMediasContact{
+    margin: 24px 0;
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+@media screen and (min-width: 769px) {
+    
+    header{
+        justify-content: center;
+    }
+
+    #menuHamburger{
+        display: none;
+    }
+
+    #menuUl{
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        width: 100%;
+        right: unset;
+        padding: 0;
+
+        border-radius: 0;
+        border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) var(--cor10) rgba(255, 255, 255, 0);
+
+    }
+
+    header ul li{
+        font-family: var(--font-paragraph);
+        padding: 5px;
+        margin: 24px;
+        font-size: 1.5rem;
+        transition: .5s;
+    }
+
+    header ul li:hover {
+        filter: drop-shadow(1px 1px 20px var(--cor10));
+    }
 }

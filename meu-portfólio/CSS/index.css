@@ -24,10 +24,6 @@
     transition: .5s;
 }
 
-.socials:hover{
-    width: 48px;
-}
-
 #willianPhoto {
     width: 300px;
 }
@@ -53,7 +49,7 @@
 }
 
 #skills h1 {
-    margin-top: 56px;
+    margin: 0;
 }
 
 
@@ -79,7 +75,7 @@
     transition: .5s;
 }
 
-.photoWithTxtSkills:hover{
+.photoWithTxtSkills:hover {
     padding: 24px;
     box-shadow: 5px 5px 56px;
 }
@@ -91,7 +87,7 @@
 }
 
 /* Skills paragraph */
- .skill {
+.skill {
     width: 300px;
     padding: 10px;
     margin-top: 8px;
@@ -112,7 +108,6 @@
     background-color: #ff4c1e;
 }
 
-
 #skillCss {
     background-color: #004ce8;
 }
@@ -126,14 +121,14 @@
     background-color: #00769d;
 }
 
-
-#portfolio h1{
-    color: var(--cor30);
-}
-
 #portfolio {
     margin-top: 56px;
 }
+
+#portfolio h1 {
+    color: var(--cor30);
+}
+
 
 #cardsContainer {
     /* margin-top: 24px; */
@@ -150,7 +145,7 @@
     width: 350px;
     padding: 16px;
     margin-top: 24px;
-    
+
     border: solid var(--cor30);
     border-radius: 8px;
     box-shadow: 6px 6px 12px #444444, -6px -6px 12px #c9bfbf;
@@ -158,7 +153,7 @@
     transition: .5s;
 }
 
-.card:hover{
+.card:hover {
     box-shadow: 5px 5px 56px;
 }
 
@@ -167,7 +162,6 @@
 }
 
 .projectPreview {
-    width: 100%;
     border-radius: 8px;
 }
 
@@ -186,7 +180,7 @@
     height: 40px;
     font-weight: 700;
     cursor: pointer;
-    
+
     border-style: none;
     border-radius: 3px;
     box-shadow: 1px 1px 6px;
@@ -196,26 +190,103 @@
 }
 
 
-/* Contact section */
 
-#contact{
-    margin-top: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #0066f41a;
-    border-top: solid 3px var(--cor10);
-}
 
-#contact h1{
-    margin-top: 24px;
-}
+@media screen and (min-width: 769px) {
 
-#socialMediasContact{
-    margin: 24px 0;
-    margin-bottom: 48px;
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+    * {
+        max-width: 100%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        max-width: 1300px;
+        width: 80%;
+    }
+
+    #present {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #photoWithSocial {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .socials:hover {
+        width: 48px;
+    }
+
+    .socialsContainer {
+        margin-top: 16px;
+        width: 100%;
+        flex-direction: row;
+        align-items: space-between;
+    }
+
+    #presentText {
+        width: 50%;
+    }
+
+    #skills {
+        margin-top: 80px;
+    }
+
+    #containerOfExplainSkills {
+        display: grid;
+        margin-top: 32px;
+        grid-template-columns: 32% 32% 32%;
+        gap: 24px;
+
+    }
+
+    #skills h1 {
+        margin-top: 56px;
+    }
+
+    .photoWithTxtSkills {
+        margin-top: 5%;
+
+    }
+
+    .skill {
+        margin: 0;
+        color: var(--cor60);
+        border-radius: 8px;
+        transition: 0.2s;
+    }
+
+    .skill.active {
+        max-width: 100%;
+    }
+
+    #portfolio{
+        margin-top: 80px;
+    }
+
+    #cardsContainer{
+        display: grid;
+        grid-template-columns: 32% 32% 32%;
+        gap: 24px;
+        margin-top: 32px;
+    }
+
+    .card{
+        height: 100%;
+        padding-bottom: 25%;
+        margin: 0;
+    }
+    
+    .seeMoreCard{
+        position: absolute;
+        margin: 0;
+        bottom: 16px;
+    }
+
 }
