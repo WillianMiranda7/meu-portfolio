@@ -121,6 +121,17 @@
     background-color: #00769d;
 }
 
+#skillUiUx{
+    background-image: linear-gradient(to bottom,
+    #6E61CE 0%,
+    #FD10FE 60%,
+    #FF3B6B 75%,
+    #FF6307 100%
+    );
+}
+
+
+
 #portfolio {
     margin-top: 56px;
 }
