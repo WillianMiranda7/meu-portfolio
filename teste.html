@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu Responsivo</title>
+    <style>
+        /* Estilo do menu */
+        #menu {
+            display: none; /* O menu começa oculto */
+            position: absolute; /* Posição absoluta */
+            top: 50px; /* Distância do topo */
+            left: 0; /* Alinha à esquerda */
+            background-color: #f4f4f4; /* Cor de fundo */
+            width: 100%; /* Largura */
+        }
+        
+        /* Estilo para o botão do menu */
+        #menuButton {
+            cursor: pointer; /* Cursor de pointer ao passar sobre o botão */
+        }
+    </style>
+</head>
+<body>
+    <!-- Botão para abrir/fechar o menu -->
+    <button id="menuButton">Menu</button>
+
+    <!-- O menu que será exibido ou oculto -->
+    <div id="menu">
+        <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+        </ul>
+    </div>
+
+    <!-- Script JavaScript -->
+    <script>
+        // Obter referências aos elementos
+        const menuButton = document.getElementById('menuButton');
+        const menu = document.getElementById('menu');
+
+        // Função para alternar a visibilidade do menu
+        function toggleMenu() {
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
+
+        // Função para fechar o menu
+        function closeMenu() {
+            menu.style.display = 'none';
+        }
+
+        // Adicionar um evento de clique ao botão para alternar o menu
+        menuButton.addEventListener('click', toggleMenu);
+
+        // Adicionar um evento de toque (ou clique) para fechar o menu
+        document.addEventListener('click', function(event) {
+            if (event.target !== menuButton && event.target !== menu) {
+                closeMenu();
+            }
+        });
+    </script>
+</body>
+</html>

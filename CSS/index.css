@@ -1,0 +1,329 @@
+/* All content after the header and before the footer */
+.content {
+    margin-top: 100px;
+    padding: 0 8px;
+}
+
+.socialsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+
+/* Box with Willian´s photo with social media icons */
+#photoWithSocial {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Box of social media icons */
+.socials {
+    width: 40px;
+    transition: .5s;
+}
+
+#willianPhoto {
+    width: 300px;
+}
+
+/* Willian´s name */
+#name {
+    font-size: 2.7rem;
+    margin-top: 16px;
+}
+
+/* Profission */
+/* #webDev {
+} */
+
+/* Presentation paragraph */
+#myPresentationTxt {
+    margin-top: 16px;
+}
+
+/* Container skills */
+#skills {
+    margin-top: 56px;
+}
+
+#skills h1 {
+    margin: 0;
+}
+
+
+#containerOfExplainSkills {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Indivisual skills */
+.photoWithTxtSkills {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+
+    border-radius: 8px;
+    box-shadow: 6px 6px 12px #444444, -6px -6px 12px #c9bfbf;
+
+    margin-top: 40px;
+    padding: 16px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.photoWithTxtSkills:hover {
+    padding: 24px;
+    box-shadow: 5px 5px 56px;
+}
+
+/* Skills photos (icons)*/
+.photoSkills {
+    cursor: pointer;
+
+}
+
+/* Skills paragraph */
+.skill {
+    width: 300px;
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 0;
+    color: var(--cor60);
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.skill.active {
+    font-size: 20px;
+    font-family: var(--font-paragraph);
+    height: unset;
+    display: block;
+}
+
+#skillHtml {
+    background-color: #ff4c1e;
+}
+
+#skillCss {
+    background-color: #004ce8;
+}
+
+#skillJs {
+    background-color: #ffdf00;
+    color: #000;
+}
+
+#skillWp {
+    background-color: #00769d;
+}
+
+#skillUiUx{
+    background-image: linear-gradient(to bottom,
+    #6E61CE 0%,
+    #FD10FE 60%,
+    #FF3B6B 75%,
+    #FF6307 100%
+    );
+}
+
+#inProcess{
+    width: 100%;
+}
+
+#photoReact{
+    background-color: #335862;
+    padding: 16px;
+}
+#skillReact{
+    background-color: #335862;
+}
+
+
+
+#portfolio {
+    margin-top: 56px;
+}
+
+#portfolio h1 {
+    color: var(--cor30);
+}
+
+
+#cardsContainer {
+    /* margin-top: 24px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    padding: 16px;
+    margin-top: 24px;
+
+    border: solid var(--cor30);
+    border-radius: 8px;
+    box-shadow: 6px 6px 12px #444444, -6px -6px 12px #c9bfbf;
+
+    transition: .5s;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 56px;
+}
+
+.projectTitle {
+    margin-bottom: 16px;
+}
+
+.projectPreview {
+    border-radius: 8px;
+}
+
+.portfolioParagraph {
+    margin-top: 8px;
+}
+
+.seeMoreCard {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-self: end;
+    margin-top: 24px;
+    font-size: 1.3rem;
+    padding: 8px;
+    height: 40px;
+    font-weight: 700;
+    cursor: pointer;
+
+    border-style: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 6px;
+
+    color: var(--cor10);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+
+
+@media screen and (min-width: 769px) {
+
+    * {
+        max-width: 100%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        max-width: 1300px;
+        width: 80%;
+    }
+
+    #present {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #photoWithSocial {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .socials:hover {
+        width: 48px;
+    }
+
+    .socialsContainer {
+        margin-top: 16px;
+        width: 100%;
+        flex-direction: row;
+        align-items: space-between;
+    }
+
+    #presentText {
+        width: 50%;
+    }
+
+    #skills {
+        margin-top: 56px;
+    }
+
+    #containerOfExplainSkills {
+        display: grid;
+        margin-top: 32px;
+        grid-template-columns: 32% 32% 32%;
+        gap: 24px;
+
+    }
+
+    #skills h1 {
+        margin-top: 56px;
+    }
+
+    .photoWithTxtSkills {
+        margin-top: 5%;
+    }
+
+    .skill {
+        color: var(--cor60);
+        border-radius: 8px;
+        transition: 0.2s;
+    }
+
+    .skill.active {
+        max-width: 100%;
+    }
+
+    #portfolio{
+        margin-top: 80px;
+    }
+
+    #skillInProcessContainer{
+        margin-top: 56px;
+    }
+    #skillInProcess{
+        margin-top: 16px;
+    }
+
+    #skillInProcessContainer h2{
+        color: var(--cor30);
+    }
+
+    #cardsContainer{
+        display: grid;
+        grid-template-columns: 32% 32% 32%;
+        gap: 24px;
+        margin-top: 32px;
+    }
+    #skillInProcess{
+        display: grid;
+        grid-template-columns: 32% 32% 32%;
+        gap: 24px;
+    }
+
+    .card{
+        height: 100%;
+        padding-bottom: 25%;
+        margin: 0;
+    }
+    
+    .seeMoreCard{
+        position: absolute;
+        margin: 0;
+        bottom: 16px;
+    }
+
+}
