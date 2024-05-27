@@ -12,7 +12,7 @@
 
 :root {
     --cor60: #fff;
-    --cor30: #0065F4;
+    --cor30: #032A9F;
     --cor10: #FF7700;
 
     --font-paragraph: Arial, Helvetica, sans-serif;
@@ -78,7 +78,7 @@ h6 {
 #menuUl a {
     font-size: 0.90em;
     font-family: var(--font-title);
-    color: var(--cor10);
+    color: var(--cor30);
     font-weight: 600;
     letter-spacing: 2px;
 }
@@ -99,7 +99,7 @@ h1::after {
     left: 0;
     width: 30%;
     height: 4px;
-    background-color: var(--cor30);
+    background-color: var(--cor10);
     border-radius: 25px;
 }
 
@@ -169,8 +169,8 @@ header {
     padding: 64px 42px 16px 16px;
 
     border: solid 1px var(--cor10);
-    box-shadow: 1px 1px 10px var(--cor10);
-    border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) var(--cor10) var(--cor10);
+    box-shadow: 1px 1px 10px var(--cor30);
+    border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) var(--cor30) var(--cor30);
     border-radius: 0 0 0 8px;
 
     background-color: rgba(255, 255, 255, 0.96);
@@ -248,7 +248,7 @@ header ul li {
         padding: 0;
 
         border-radius: 0;
-        border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) var(--cor10) rgba(255, 255, 255, 0);
+        border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) var(--cor30) rgba(255, 255, 255, 0);
 
     }
 
@@ -264,7 +264,7 @@ header ul li {
     header ul li::after {
         position: absolute;
         content: '';
-        background-color: var(--cor30);
+        background-color: var(--cor10);
         height: 5px;
         width: 0%;
         right: 0;
@@ -276,7 +276,7 @@ header ul li {
     }
 
     header ul li:hover::after {
-        background-color: var(--cor30);
+        background-color: var(--cor10);
         width: 100%;
     }
 
