@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -6,6 +8,7 @@
     text-decoration: none;
     max-width: 100%;
 }
+
 
 :root {
     --cor60: #fff;
@@ -16,52 +19,60 @@
     --font-title: "Orbitron", sans-serif;
 }
 
+.content {
+    max-width: 1440px;
+    margin-top: 100px;
+    padding: 0 8px;
+}
+
+section{
+    border-top: solid 2px var(--cor30);
+}
+
 button,
 input,
 .seeMoreCard {
     font-family: var(--font-title);
 }
 
-.risk{
-    height: 5px;
-    width: 15px;
-    background-color: var(--cor30);
-}
 
 h1 {
-    font-size: 2.986rem;
-    font-family: var(--font-title);
-    color: #000;
+    font-size: 2.7rem;
 }
 
 h2 {
-    font-size: 2rem;
-    font-family: var(--font-title);
+    font-size: 2.074rem;
 }
 
-h3 {
-    font-size: 2.074rem;
-    font-family: var(--font-title);
-}
+/* h3 {
+    font-size: 2rem;
+} */
 
 h4 {
     font-size: 1.728rem;
-    font-family: var(--font-title);
 }
 
 h5 {
     font-size: 1.44rem;
-    font-family: var(--font-title);
 }
 
 h6 {
     font-size: 1.2rem;
-    font-family: var(--font-title);
 }
 
 p {
-    font-size: 20px;
+    line-height: 20px;
+    font-size: 1rem;
     font-family: var(--font-paragraph);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-title);
 }
 
 #menuUl a {
@@ -74,6 +85,22 @@ p {
 
 small {
     font-size: 0.833rem;
+}
+
+h1 {
+    position: relative;
+    display: inline;
+}
+
+h1::after {
+    position: absolute;
+    content: " ";
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    height: 4px;
+    background-color: var(--cor30);
+    border-radius: 25px;
 }
 
 
@@ -116,20 +143,20 @@ header {
     transition: 0.2s;
 }
 
-#menuHamburger.activate{
-    box-shadow:1px 1px 6px red, -1px -1px 6px red;
+#menuHamburger.activate {
+    box-shadow: 1px 1px 6px red, -1px -1px 6px red;
 }
 
-#menuHamburger.activate .hamburgerLine:nth-child(1){
+#menuHamburger.activate .hamburgerLine:nth-child(1) {
     transform: translateY(12px) rotate(-45deg);
     background-color: red;
 }
 
-#menuHamburger.activate .hamburgerLine:nth-child(2){
+#menuHamburger.activate .hamburgerLine:nth-child(2) {
     opacity: 0;
 }
 
-#menuHamburger.activate .hamburgerLine:nth-child(3){
+#menuHamburger.activate .hamburgerLine:nth-child(3) {
     transform: translateY(-14px) rotate(45deg);
     background-color: red;
 }
@@ -150,7 +177,7 @@ header {
     transition: 0.5s;
 }
 
-#menuUl.activateUl{
+#menuUl.activateUl {
     right: 0;
     transition: 0.2s;
 }
@@ -173,7 +200,7 @@ header ul li {
 
 
 /* Footer */
-#contact{
+#contact {
     width: 100%;
     margin-top: 60px;
     display: flex;
@@ -184,12 +211,12 @@ header ul li {
     border-top: solid 3px var(--cor10);
 }
 
-#contact h1{
+#contact h1 {
     margin-top: 24px;
 }
 
-#socialMediasContact{
-    margin: 24px 0;
+#socialMediasContact {
+    margin: 32px 0;
     margin-bottom: 48px;
     display: flex;
     justify-content: space-evenly;
@@ -198,16 +225,21 @@ header ul li {
 
 
 @media screen and (min-width: 769px) {
-    
-    header{
+
+    .content {
+        margin-top: 100px;
+        padding: 0 8px;
+    }
+
+    header {
         justify-content: center;
     }
 
-    #menuHamburger{
+    #menuHamburger {
         display: none;
     }
 
-    #menuUl{
+    #menuUl {
         display: flex;
         position: fixed;
         justify-content: center;
@@ -220,7 +252,7 @@ header ul li {
 
     }
 
-    header ul li{
+    header ul li {
         font-family: var(--font-paragraph);
         padding: 5px;
         margin: 24px;
@@ -229,7 +261,7 @@ header ul li {
         position: relative;
     }
 
-    header ul li::after{
+    header ul li::after {
         position: absolute;
         content: '';
         background-color: var(--cor30);
@@ -239,12 +271,21 @@ header ul li {
         bottom: 0;
         left: 0;
         margin-left: 5px;
-        border-radius: 0 25px 25px 0 ;
+        border-radius: 0 25px 25px 0;
         transition: .2s;
     }
 
-    header ul li:hover::after{
+    header ul li:hover::after {
         background-color: var(--cor30);
         width: 100%;
+    }
+
+
+    #socialMediasContact {
+        margin: 56px 0;
+        margin-bottom: 48px;
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 512px;
     }
 }

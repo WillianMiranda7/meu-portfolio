@@ -1,0 +1,22 @@
+h3{
+    font-size: 1.3rem;
+    margin-top: 16px;
+}
+
+p{
+    margin-top: 8px;
+}
+
+#izaPreview{
+    margin-top: 32px;
+}
+
+#disgnosis{
+    margin-top: 54px;
+}
+
+#izaPageSpeedImg{
+    border: solid 1px #00000058;
+    border-radius: 15px;
+    margin-top: 32px;
+}

@@ -1,15 +1,10 @@
-/* All content after the header and before the footer */
-.content {
-    margin-top: 100px;
-    padding: 0 8px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 .socialsContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
-
 
 
 /* Box with Willian´s photo with social media icons */
@@ -24,19 +19,25 @@
     transition: .5s;
 }
 
+#presentText {
+    display: flex;
+    flex-direction: column;
+}
+
 #willianPhoto {
     width: 300px;
 }
 
 /* Willian´s name */
 #name {
-    font-size: 2.7rem;
+    
     margin-top: 16px;
 }
 
 /* Profission */
-/* #webDev {
-} */
+#webDev {
+    margin-top: 16px;
+}
 
 /* Presentation paragraph */
 #myPresentationTxt {
@@ -121,35 +122,33 @@
     background-color: #00769d;
 }
 
-#skillUiUx{
-    background-image: linear-gradient(to bottom,
-    #6E61CE 0%,
-    #FD10FE 60%,
-    #FF3B6B 75%,
-    #FF6307 100%
-    );
+#skillUiUx {
+    background-color: #6E61CE;
+
+    /* background-image: linear-gradient(to bottom,
+            #6E61CE 0%,
+            #FD10FE 60%,
+            #FF3B6B 75%,
+            #FF6307 100%); */
 }
 
-#inProcess{
-    width: 100%;
+
+/* Skills in progress */
+
+
+#skillReact {
+    background-color: #335862;
 }
 
-#photoReact{
+#photoReact {
     background-color: #335862;
     padding: 16px;
-}
-#skillReact{
-    background-color: #335862;
 }
 
 
 
 #portfolio {
     margin-top: 56px;
-}
-
-#portfolio h1 {
-    color: var(--cor30);
 }
 
 
@@ -159,6 +158,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+.portfolioLink {
+    color: #000;
 }
 
 .card {
@@ -254,6 +257,8 @@
     }
 
     #presentText {
+        display: flex;
+        flex-direction: column;
         width: 50%;
     }
 
@@ -287,40 +292,25 @@
         max-width: 100%;
     }
 
-    #portfolio{
+    #portfolio {
         margin-top: 80px;
     }
 
-    #skillInProcessContainer{
-        margin-top: 56px;
-    }
-    #skillInProcess{
-        margin-top: 16px;
-    }
 
-    #skillInProcessContainer h2{
-        color: var(--cor30);
-    }
-
-    #cardsContainer{
+    #cardsContainer {
         display: grid;
         grid-template-columns: 32% 32% 32%;
         gap: 24px;
         margin-top: 32px;
     }
-    #skillInProcess{
-        display: grid;
-        grid-template-columns: 32% 32% 32%;
-        gap: 24px;
-    }
 
-    .card{
+    .card {
         height: 100%;
         padding-bottom: 25%;
         margin: 0;
     }
-    
-    .seeMoreCard{
+
+    .seeMoreCard {
         position: absolute;
         margin: 0;
         bottom: 16px;
